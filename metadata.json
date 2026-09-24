@@ -1,0 +1,6 @@
+{
+  "name": "DOHAR - UAE On-Demand Printing & Custom Merchandise",
+  "description": "On-demand custom printing business in the UAE. Textiles printing, corporate gifting, bespoke uniforms, and event merchandise with fast Dubai, Abu Dhabi, and Sharjah delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

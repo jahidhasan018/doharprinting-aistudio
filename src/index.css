@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --cmyk-cyan: #29abe1;
+    --cmyk-yellow: #faec1c;
+    --cmyk-magenta: #e80f8a;
+    --cmyk-ink: #211f1f;
+    --warm-bg: #FAF9F6;
+    --warm-surface: #F4F2EB;
+    --warm-border: #E8E5DD;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--warm-bg);
+    color: var(--cmyk-ink);
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Subtle print culture details */
+.bg-halftone-pattern {
+  background-image: radial-gradient(rgba(33, 31, 31, 0.08) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.cmyk-registration-mark {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.cmyk-registration-mark::before,
+.cmyk-registration-mark::after {
+  content: '';
+  position: absolute;
+  background: currentColor;
+}
+.cmyk-registration-mark::before {
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: translateY(-50%);
+}
+.cmyk-registration-mark::after {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f2eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d0c5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #211f1f;
+}
+
